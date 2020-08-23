@@ -145,7 +145,7 @@ class Kamal {
 | Arithmetic |  Comparison | Logical | 
 | :---: | :---: | :---: |
 | + | >  | && (and) |
-| - | <  | || (or) |
+| - | <  | `|`| (or) |
 | * | >= | ! (not |)
 | / | <= |  |
 | % (mod) | == (equality without datatype) |  |
