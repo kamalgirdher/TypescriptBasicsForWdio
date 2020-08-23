@@ -143,7 +143,7 @@ class Kamal {
 <p>
 
 | Arithmetic |  Comparison | Logical | 
-| :---: |
+| :---: | :---: | :---: |
 | + | >  | && (and) |
 | - | <  | || (or) |
 | * | >= | ! (not |)
