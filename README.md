@@ -157,7 +157,11 @@ class Kamal {
 
 | Operator | Detail | Example | 
 | :---: | :---: | :---: |
-| | | |
+| + | Concatenation | var a:string = 'hello'+'World' |
+| ? : | Conditional | var x = a>10 ? 'greater' : 'smaller' |
+|  |  |  |
+|  |  |  |
+
 
 </p>
 </details>
