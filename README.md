@@ -141,6 +141,17 @@ class Kamal {
 
 <details><summary><b>Operators</b></summary>
 <p>
+
+| Arithmetic |  Comparison | Logical | 
+| :---: |
+| + | >  | && (and) |
+| - | <  | || (or) |
+| * | >= | ! (not |)
+| / | <= |  |
+| % (mod) | == (equality without datatype) |  |
+| ++ | !=  |  |
+| -- | === (equality with datatype) |  |
+
 </p>
 </details>
 
