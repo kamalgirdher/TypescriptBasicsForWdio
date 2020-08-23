@@ -152,6 +152,13 @@ class Kamal {
 | ++ | !=  |  |
 | -- | === (equality with datatype) |  |
 
+
+**Other Operators**
+
+| Operator | Detail | Example | 
+| :---: | :---: | :---: |
+| | | |
+
 </p>
 </details>
 
