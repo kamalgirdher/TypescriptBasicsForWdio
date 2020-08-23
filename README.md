@@ -160,7 +160,6 @@ class Kamal {
 | + | Concatenation | var a:string = 'hello'+'World' |
 | ? : | Conditional | var x = a>10 ? 'greater' : 'smaller' |
 |  |  |  |
-|  |  |  |
 
 
 </p>
@@ -169,6 +168,52 @@ class Kamal {
 
 <details><summary><b>Conditional Statements</b></summary>
 <p>
+
+**if**
+
+```
+const a:number = 10;
+if (a>5){
+	console.log('Hello. I'm here!')
+}
+```
+
+**if.. else**
+
+```
+const a:number = 10;
+if (a>5){
+	console.log('Hello. I'm here!')
+}else{
+	console.log('Here I am')
+}
+```
+
+**if.. else if**
+
+```
+var a:number = 2 
+if(a > 0) { 
+   console.log('a greater than 0') 
+} else if(a < 0) { 
+   console.log('a less than 0') 
+} else { 
+   console.log('a is 0') 
+}
+```
+
+**switch case**
+
+```
+var x:string = "A"; 
+switch(x) { 
+   case "A": { console.log("Apple"); } 
+   case "B": { console.log("Ball"); } 
+   case "C": { console.log("Cat"); } 
+   default: { console.log("Nothing"); } 
+}
+```
+
 </p>
 </details>
 
