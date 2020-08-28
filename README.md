@@ -220,6 +220,117 @@ switch(x) {
 
 <details><summary><b>Loops</b></summary>
 <p>
+Typescript support 3 types of loops.
+
+* for loop
+* for..of loop
+* for..in loop
+
+
+**for loop**
+
+```
+for (let i=0; i<10; i++){
+	console.log(i*i);
+}
+```
+
+Output :
+```
+0
+1
+4
+9
+16
+25
+36
+49
+64
+81
+```
+
+**for .. of loop**
+
+```
+let itms = [11, 22, 33, 44, 55];
+for (let itm of itms) {
+  console.log(itm);
+}
+```
+
+Output :
+```
+11
+22
+33
+44
+55
+```
+
+The for...of loop returns a character from string value.
+
+```
+let fullname = "Kamal Girdher";
+for (let chr of fullname) {
+  console.log(chr);
+}
+```
+
+Output :
+```
+K
+a
+m
+a
+l
+ 
+G
+i
+r
+d
+h
+e
+r
+```
+
+
+**for .. in loop**
+
+```
+let itms = [11, 22, 33, 44, 55];
+for (let x in itms) {
+  console.log(x);
+}
+```
+
+	It prints indexes and not the values.
+	
+Output :
+```
+0
+1
+2
+3
+4
+```
+
+To print the values, you need to use 
+
+```
+let itms = [11, 22, 33, 44, 55];
+for (let x in itms) {
+  console.log(itms[x]);
+}
+```
+Output :
+```
+11
+22
+33
+44
+55
+```
+
 </p>
 </details>
 
