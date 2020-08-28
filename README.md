@@ -220,7 +220,11 @@ switch(x) {
 
 <details><summary><b>Loops</b></summary>
 <p>
-Typescript support 3 types of loops.
+
+###For Loops
+
+Typescript support 3 types of **FOR** loops.
+
 
 * for loop
 * for..of loop
@@ -331,12 +335,90 @@ Output :
 55
 ```
 
+
+### While loop
+
+It has 2 flavors:
+
+* while (condition) {..}
+* do {..} while (condition)
+
+
+**while**
+
+```
+let i: number = 1;
+
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+```
+
+Output:
+```
+1
+2
+3
+4
+5
+```
+
+
+**do .. while**
+
+```
+let i: number = 1;
+
+do {
+    console.log(i);
+    i++;
+} while (i <= 5) 
+```
+
+Output:
+```
+1
+2
+3
+4
+5
+```
+
+The difference is that it executes the statements at least once as it checks the condition after executing the block once.
+
 </p>
 </details>
 
 
 <details><summary><b>Functions</b></summary>
 <p>
+
+**Basic function**
+```
+function sayhello() {
+    console.log("Hello Kamal!");
+}
+```
+
+**Function with parameters**
+```
+function sumOfTwo(x: number, y: number){
+    console.log(x + y);
+}
+```
+
+
+**Function with return type**
+```
+function getRandom() : number{
+    return Math.round(Math.random()*100);
+}
+
+let a = getRandom();
+
+console.log(a);
+```
 </p>
 </details>
 
