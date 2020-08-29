@@ -532,7 +532,7 @@ var a = ['a','b','c','d'];
 ```
 
 
-**concat**
+**concat()**
 
 used to join arrays.
 
@@ -550,7 +550,7 @@ Output:
 ```
 
 
-**every**
+**every()**
 
 Returns true if every element in this array satisfies the provided testing function.
 
@@ -569,7 +569,7 @@ true
 ```
 
 
-**filter**
+**filter()**
 
 creates a new array with all elements that pass the test implemented by the provided function.
 
@@ -588,7 +588,7 @@ Output:
 ```
 
 
-**forEach**
+**forEach()**
 
 calls the function for each element of the array.
 
@@ -605,7 +605,7 @@ Output :
 1936
 ```
 
-**indexOf**
+**indexOf()**
 
 returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
@@ -622,6 +622,126 @@ Output:
 First element has index 0.
 
 
+**join()**
+
+used to join the array elements as string.
+
+```
+var arr = [10, 20, 30, 40, 50]
+console.log(arr.join('-'));
+```
+
+Output:
+```
+10-20-30-40-50 
+```
+
+
+**lastIndexOf()**
+
+returns the last index at which an element is found in the array. The array is searched backward direction.
+returns -1 if the element is not present.
+
+```
+var index = [10, 20, 30, 40, 50, 10, 30, 40].lastIndexOf(10);
+console.log(index);
+```
+
+Output:
+```
+5
+```
+
+**map()**
+
+creates a new array after processing each element on array using the given function.
+
+```
+var arr = [1,2,3,4,5];
+var result = arr.map( (x) => {return x*x;});
+console.log(result);
+```
+
+Output :
+```
+[ 1, 4, 9, 16, 25 ] 
+```
+
+
+**push() & pop()**
+
+push is used to add an element at end of the array.
+
+pop is used to remove last element of the array.
+
+
+```
+var arr = [1,2,3,4,5];
+arr.push(6);
+console.log(arr);
+arr.pop()
+console.log(arr);
+```
+
+Output:
+
+```
+[ 1, 2, 3, 4, 5, 6 ] 
+[ 1, 2, 3, 4, 5 ] 
+```
+
+**reduce()**
+
+applies a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value.
+
+```
+var joinChars = ['A', 'B', 'C', 'D'].reduce(function(a, b, c){ console.log(a+b); return a + b; }); 
+console.log("result : " + joinChars );
+```
+
+Output:
+```
+AB 
+ABC 
+ABCD 
+result : ABCD 
+```
+
+**reduceRight()**
+
+applies a function simultaneously against two values of the array (from right-to-left) as to reduce it to a single value.
+
+```
+var joinChars = ['A', 'B', 'C', 'D'].reduceRight(function(a, b, c){ console.log(a+b); return a + b; }); 
+console.log("result : " + joinChars );
+```
+
+Output:
+```
+DC 
+DCB 
+DCBA 
+result : DCBA
+```
+
+**reverse()**
+
+reverses the order of elements of array.
+
+```
+var arr = ['A', 'B', 'C', 'D']
+arr.reverse();
+console.log(arr);
+```
+
+Output:
+
+```
+[ "D", "C", "B", "A" ]
+```
+
+
+**shift()**
 
 </p>
 </details>
