@@ -221,7 +221,7 @@ switch(x) {
 <details><summary><b>Loops</b></summary>
 <p>
 
-###For Loops
+### For Loops
 
 Typescript support 3 types of **FOR** loops.
 
@@ -419,12 +419,210 @@ let a = getRandom();
 
 console.log(a);
 ```
+
+**Function with arguments and returning value**
+```
+function getSum(a: number, b: number) : number{
+    return (a+b);
+}
+
+let a = getSum(5,10);
+
+console.log(a);
+```
+
+**Function with optional parameters**
+```
+function sumOfTwoOrThree(a:number,b:number,c?:number) {
+   if(c!=undefined) { return a+b+c; }
+   else { return a+b; }
+}
+
+console.log(sumOfTwoOrThree(1,2));
+console.log(sumOfTwoOrThree(1,2,3));
+```
+
+Output:
+```
+3
+6
+```
+
+**Function with rest parameters**
+```
+function add(...nums:number[]) {  
+   let sum:number = 0; 
+   for(let i = 0;i<nums.length;i++) { 
+      sum = sum + nums[i]; 
+   } 
+   console.log('Sum : ', sum) 
+} 
+add(1,2,3) 
+add(1,2,3,4,5,6)
+```
+
+Output:
+```
+6
+21
+```
+
+**Anonymous Function**
+
+```
+var result = function(a:number,b:number) { return a*b; }; 
+console.log(result(12,2));
+```
+
+**Lambda Expression / Arrow function**
+
+
+**without arguments**
+```
+var msg = ()=> { 
+   console.log("Hi Kamal"); 
+} 
+
+msg();
+```
+
+Output :
+```
+Hi Kamal
+```
+
+**with arguments**
+```
+let sum = (x: number, y: number) => { x + y; }
+
+sum(3, 4);
+```
+
+Output :
+```
+7
+```
+
+
+we would be using this very frequently while writing our tests in webdriverIO.
+
+
+```
+describe('Verify application loading', () => {
+    it('should have the right title', () => {
+        browser.url('https://extremeExcel.com')
+        expect(browser).toHaveTitle('Extreme Automation - Kamal Girdher');
+    })
+})
+```
+
+
 </p>
 </details>
 
 
 <details><summary><b>Arrays</b></summary>
 <p>
+
+
+**Create an array**
+
+```
+var a = ['a','b','c','d'];
+```
+
+
+**concat**
+
+used to join arrays.
+
+```
+var a = ['a','b','c','d'];
+var b = ['e','f'];
+
+var c =a.concat(b);
+console.log(c);
+```
+
+Output:
+```
+[ "a", "b", "c", "d", "e", "f" ] 
+```
+
+
+**every**
+
+Returns true if every element in this array satisfies the provided testing function.
+
+```
+function isEven(num: number) { 
+   return (num % 2 == 0 ? true : false); 
+} 
+          
+var result = [1, 10, 28, 130, 44].every(isEven); 
+console.log(result);
+```
+
+Output:
+```
+true
+```
+
+
+**filter**
+
+creates a new array with all elements that pass the test implemented by the provided function.
+
+```
+function isEven(num: number) { 
+   return (num % 2 == 0 ? true : false); 
+} 
+          
+var result = [1, 10, 28, 13, 44].filter(isEven); 
+console.log(result);
+```
+
+Output:
+```
+[ 10, 28, 44 ]
+```
+
+
+**forEach**
+
+calls the function for each element of the array.
+
+```
+[1, 10, 28, 13, 44].forEach( (x) => {console.log(x*x);}); 
+```
+
+Output :
+```
+1 
+100 
+784 
+169 
+1936
+```
+
+**indexOf**
+
+returns the first index at which a given element can be found in the array, or -1 if it is not present.
+
+```
+var index = [10, 20, 30, 40, 50].indexOf(30); 
+console.log(index);
+```
+
+Output:
+```
+2
+```
+
+First element has index 0.
+
+
+
 </p>
 </details>
 
@@ -439,4 +637,5 @@ console.log(a);
 <p>
 </p>
 </details>
+
 
