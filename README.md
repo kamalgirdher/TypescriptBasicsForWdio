@@ -559,7 +559,7 @@ function isEven(num: number) {
    return (num % 2 == 0 ? true : false); 
 } 
           
-var result = [1, 10, 28, 130, 44].every(isEven); 
+var result = [12, 10, 28, 130, 44].every(isEven); 
 console.log(result);
 ```
 
@@ -743,6 +743,110 @@ Output:
 
 **shift()**
 
+Removes the first element from an array and returns that element
+
+```
+var arr = ['A', 'B', 'C', 'D']
+console.log(arr.shift());
+console.log(arr);
+```
+
+Output:
+```
+A 
+[ "B", "C", "D" ]
+```
+
+**slice()**
+
+extracts a section of an array and returns a new array.
+
+```
+var arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+console.log(arr.slice(1,4))
+```
+
+Output:
+```
+[ "B", "C", "D" ] 
+```
+
+**some()**
+
+Returns true if some element(s) in this array satisfies the provided testing function.
+
+```
+function isEven(num: number) { 
+   return (num % 2 == 0 ? true : false); 
+} 
+          
+var result = [1, 11, 28, 13, 47].some(isEven); 
+console.log(result);
+```
+
+Output:
+```
+true
+```
+
+
+**sort()**
+
+sorts the elements of the array in lexicographical order. To sort numbers, you can pass the function as argument.
+
+```
+var arr = ['banana','orange','apple','apricot']
+console.log(arr.sort());
+```
+
+Output :
+```
+[ "apple", "apricot", "banana", "orange" ]
+```
+
+
+**splice()**
+
+splice() method changes the content of an array, adding new elements while removing old elements.
+
+```
+var arr = ["A", "B", "C", "D", "E"];  
+var removed = arr.splice(2, 2, "X");  
+console.log(arr);
+console.log(removed);
+```
+
+Output:
+```
+[ "A", "B", "X", "E" ] 
+[ "C", "D" ] 
+```
+
+
+**toString()**
+
+```
+var arr = ["A", "B", "C", "D", "E"];  
+console.log(arr.toString());
+```
+
+Output:
+```
+A,B,C,D,E 
+```
+
+**unshift()**
+
+```
+var arr = ["A", "B", "C", "D", "E"];  
+arr.unshift('X','Y');
+console.log(arr);
+```
+
+Output:
+```
+[ "X", "Y", "A", "B", "C", "D", "E" ]
+```
 </p>
 </details>
 
